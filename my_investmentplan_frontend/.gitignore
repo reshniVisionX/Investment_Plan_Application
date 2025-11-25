@@ -15,11 +15,11 @@ dist-ssr
 .env
 public
 
-vite.config.ts
-tsconfig.app.json
-tsconfig.json
-tsconfig.node.json
-eslint.config.js
+# vite.config.ts
+# tsconfig.app.json
+# tsconfig.json
+# tsconfig.node.json
+# eslint.config.js
 
 
 # Editor directories and files

@@ -2,7 +2,7 @@
 InvestmentPlanAPI/bin
 InvestmentPlanAPI/obj
 InvestmentPlanAPI/Properties
-InvestmentPlanAPI/InvestmentPlanAPI.csproj
+# InvestmentPlanAPI/InvestmentPlanAPI.csproj
 InvestmentPlanAPI/InvestmentPlanAPI.csproj.user
 InvestmentPlanAPI/InvestmentPlanAPI.http
 InvestmentPlanAPI/appsettings.Development.json
