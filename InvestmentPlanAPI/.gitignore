@@ -1,0 +1,107 @@
+.vs/
+InvestmentPlanAPI/bin
+InvestmentPlanAPI/obj
+InvestmentPlanAPI/Properties
+InvestmentPlanAPI/InvestmentPlanAPI.csproj
+InvestmentPlanAPI/InvestmentPlanAPI.csproj.user
+InvestmentPlanAPI/InvestmentPlanAPI.http
+InvestmentPlanAPI/appsettings.Development.json
+InvestmentPlanAPI/appsettings.json
+
+InvestmentPlanAPI.sln
+
+InvestmentXTesting/bin
+InvestmentXTesting/obj
+InvestmentXTesting/InvestmentXTesting.csproj
+
+
+# =========================
+# Visual Studio & IDE files
+# =========================
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+
+# =========================
+# Build and output folders
+# =========================
+**/bin/
+**/obj/
+publish/
+dist/
+out/
+
+# =========================
+# ASP.NET Core configuration & secrets
+# =========================
+**/appsettings.Development.json
+**/appsettings.json
+**/InvestmentPlanAPI.csproj.user
+
+# =========================
+# EF Core Migrations
+# =========================
+**/Migrations/*.Designer.cs
+**/Migrations/*.cs
+**/Migrations/SchoolContextModelSnapshot.cs
+
+# =========================
+# Node / Angular
+# =========================
+node_modules/
+package-lock.json
+dist/
+.angular/
+
+# =========================
+# Test outputs
+# =========================
+**/TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.vsmdi
+
+# =========================
+# Logs and temp files
+# =========================
+*.log
+*.tmp
+*.temp
+*.tlog
+*.cache
+*.pdb
+*.bak
+*.backup
+
+# =========================
+# Editor / OS files
+# =========================
+Thumbs.db
+Desktop.ini
+
+# =========================
+# HTTP request files (optional)
+# =========================
+*.http
+
+# =========================
+# Ignore Angular build artifacts
+# =========================
+**/dist/
+*.tsbuildinfo
+
+/bin
+/obj
+/Properties
+/InvestmentPlanAPI.csproj.user
+/appsettings*.json
+/appsettings.Development.json
+/Migrations
+**/uploads
+**/Properties
+**/Logs

@@ -1,0 +1,140 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+/* Container fills the screen */
+.final-verification-container {
+  margin: 0;
+  padding: 3rem 4rem;
+  border-radius: 0; /* remove rounded edges */
+  box-shadow: none; /* optional for flat layout */
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center vertically */
+  text-align: center;
+}
+
+.final-verification-container:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* -----------------------------------------------------------
+   TITLES AND TEXT
+----------------------------------------------------------- */
+.final-verification-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.final-verification-subtitle {
+  color: var(--text-color);
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* -----------------------------------------------------------
+   BUTTON GROUP
+----------------------------------------------------------- */
+.final-btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* -----------------------------------------------------------
+   BUTTONS (Base Style)
+----------------------------------------------------------- */
+.final-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.final-btn:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------------------------------
+   BUTTON VARIANTS
+----------------------------------------------------------- */
+.final-btn.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.final-btn.primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.final-btn.view {
+  background-color: #5b65e0;
+  color: #fff;
+}
+
+.final-btn.view:hover {
+  background-color: #424bbd;
+}
+
+.final-btn.download {
+  background-color: #3aa85f;
+  color: #fff;
+}
+
+.final-btn.download:hover {
+  background-color: #2d8c4f;
+}
+
+.final-btn.complete {
+  background-color: #333;
+  color: #fff;
+}
+
+.final-btn.complete:hover {
+  background-color: #000;
+}
+
+
+/* -----------------------------------------------------------
+   RESPONSIVE DESIGN
+----------------------------------------------------------- */
+@media (max-width: 768px) {
+  .final-verification-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .final-btn-group {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .final-btn {
+    width: 100%;
+  }
+
+  .final-verification-title {
+    font-size: 1.5rem;
+  }
+
+  .final-verification-subtitle {
+    font-size: 0.95rem;
+  }
+}

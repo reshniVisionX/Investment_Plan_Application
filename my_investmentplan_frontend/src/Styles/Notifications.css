@@ -1,0 +1,46 @@
+.notifications-container {
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.notification-item {
+  background: var(--card-bg);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: background 0.2s;
+}
+
+.notification-item.unread {
+  background-color: rgba(101, 82, 208, 0.1);
+}
+
+.notification-item.read {
+  opacity: 0.8;
+}
+
+.notification-message {
+  font-size: 15px;
+  margin: 0;
+}
+
+.notification-time {
+  display: block;
+  font-size: 13px;
+  color: gray;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.no-data {
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,121 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d0a52;
+  background: linear-gradient(90deg, rgba(13, 10, 82, 1) 0%, rgba(57, 49, 120, 1) 35%, rgba(106, 89, 207, 1) 70%, rgba(173, 159, 252, 1) 100%);  color: #fff;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.8rem;
+  margin-right: 0.6rem;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.navbar-right button {
+  margin-left: 1rem;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-right button:hover {
+  opacity: 0.85;
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 220px;
+  background-color: var(--card-bg);
+  border-right: 1px solid var(--card-border);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.8rem 1rem;
+  margin: 0.3rem 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 8px;
+}
+
+.sidebar li:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+.notificationitem {
+  position: relative;
+}
+
+.notificationdot {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #2ecc71; 
+  border-radius: 50%;
+  
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid var(--card-border);
+    justify-content: space-around;
+  }
+
+  .sidebar li {
+    padding: 0.5rem;
+  }
+}

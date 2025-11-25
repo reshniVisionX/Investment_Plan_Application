@@ -1,0 +1,454 @@
+/* --- MAIN WRAPPER --- */
+.portfolio-wrapper {
+  padding: 20px;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+/* --- TITLES --- */
+.portfolio-main-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+/* --- SUMMARY SECTIONS --- */
+.portfolio-summary-section {
+  margin-bottom: 25px;
+}
+.stock-value{
+  font-weight: 400;
+  font-family:'Times New Roman', Times, serif;
+ 
+}
+.portfolio-summary-heading {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+.portfolio-summary-card {
+  background: var(--card-bg);
+  padding: 18px;
+  display: flex;
+  gap: 40px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
+}
+
+.portfolio-summary-item span {
+  font-size: 15px;
+}
+
+.summary-profit-positive {
+  color: rgb(8, 148, 32);
+}
+
+.summary-profit-negative {
+  color: rgb(220, 38, 38);
+}
+
+/* --- STOCKS SECTION --- */
+.portfolio-stock-section,
+.portfolio-fund-section {
+  margin-bottom: 40px;
+}
+
+.portfolio-section-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+.portfolio-stock-grid,
+.portfolio-fund-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-stock-grid,
+  .portfolio-fund-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio-stock-card,
+.portfolio-fund-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-stock-card:hover,
+.portfolio-fund-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* --- STOCK EXCHANGE BACKGROUNDS --- */
+.nse-stock {
+
+  border-left: 4px solid #80b9eb;
+}
+
+.bse-stock {
+
+  border-left: 4px solid #3692ef;
+}
+
+/* --- STOCK STRUCTURE --- */
+.portfolio-stock-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.portfolio-stock-symbol {
+  font-weight: bold;
+  color:var(--text-color);
+  text-align: center;
+}
+
+.portfolio-stock-sector {
+  opacity: 0.8;
+}
+
+.portfolio-stock-price {
+  font-weight: bold;
+}
+
+.portfolio-stock-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.portfolio-stock-left div,
+.portfolio-stock-right div {
+  margin-bottom: 6px;
+}
+
+.profit-positive {
+  color: rgb(8, 148, 32);
+}
+
+.profit-negative {
+  color: rgb(220, 38, 38);
+}
+
+.portfolio-stock-date {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* --- FUND CARD --- */
+.portfolio-fund-header {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+/* FUND CARD BASE */
+.portfolio-fund-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: var(--card-shadow);
+  transition: 0.3s ease;
+}
+
+.portfolio-fund-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* HEADER */
+.portfolio-fund-header {
+  margin-bottom: 12px;
+}
+
+.portfolio-fund-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* BODY SPLIT LIKE STOCK */
+.portfolio-fund-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.portfolio-fund-left,
+.portfolio-fund-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* DETAIL TEXT */
+.portfolio-fund-detail {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.portfolio-fund-value {
+  font-weight: 600;
+}
+.stock-sell-btn{
+  margin-top: 12px;
+  color:var(--text-color);
+  background-color: rgb(8, 210, 8);
+  font-weight: 500;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 1px 2px 2px rgba(193, 192, 192, 0.695);
+}
+.stock-sell-btn:hover{
+   background-color: #01570f;
+}
+/* DATE SECTION */
+.portfolio-fund-dates {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.portfolio-date-btn{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+}
+.portfolio-fund-btns{
+  margin-top: 30px;
+}
+.funbtn{
+  border-radius: 15px;
+  color:var(--text-color);
+  background-color: rgb(8, 210, 8);
+  font-weight: 500;
+  height: 30px;
+  text-align: center;
+  box-shadow: 1px 2px 2px rgba(193, 192, 192, 0.695);
+}
+.funbtn:hover{
+  background-color: #01570f;
+}
+/* PROFIT COLORS */
+.profit-positive {
+  color: #008000;
+  font-weight: 600;
+}
+
+.profit-negative {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* --- EMPTY / LOADING --- */
+.portfolio-empty {
+  opacity: 0.7;
+}
+
+.portfolio-loading {
+  opacity: 0.7;
+}
+
+/* ---------------- LABELS (PRIMARY COLORED TITLES) ---------------- */
+.portfolio-label {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ---------------- STOCK PROFIT/LOSS DYNAMIC ---------------- */
+.stock-value-positive {
+  color: #0a8a1f;
+  font-weight: 600;
+}
+
+.stock-value-negative {
+  color: #d7263d;
+  font-weight: 600;
+}
+
+/* ---------------- FUND PROFIT/LOSS DYNAMIC ---------------- */
+.fund-value-positive {
+  color: #0a8a1f;
+  font-weight: 600;
+}
+
+.fund-value-negative {
+  color: #d7263d;
+  font-weight: 600;
+}
+
+/* ---------------- CLEANER ALIGNMENT ---------------- */
+.portfolio-stock-left div,
+.portfolio-stock-right div,
+.portfolio-fund-left div,
+.portfolio-fund-right div {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+
+/* ===========================
+   COMMON MODAL OVERLAY
+=========================== */
+.sell-modal-overlay,
+.redeem-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+/* ===========================
+   COMMON MODAL BOX
+=========================== */
+.sell-modal-box,
+.redeem-modal-box {
+  background: var(--card-dark);
+  width: 380px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  color: var(--text-light);
+  animation: modalPop 0.25s ease-out;
+}
+
+@keyframes modalPop {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.sell-modal-box h3,
+.redeem-modal-box h3 {
+  margin-bottom: 18px;
+  font-size: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.sell-modal-box ,
+.redeem-modal-box{
+  background: var(--bg-color);
+}
+/* ===========================
+   INPUT FIELDS
+=========================== */
+.sell-input,
+.redeem-input {
+  width: 80%;
+  padding: 10px 12px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: var(--background-dark);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.sell-input:focus,
+.redeem-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* ===========================
+   BUTTON ROW
+=========================== */
+.sell-modal-actions,
+.redeem-modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* ===========================
+   SELL BUTTON STYLES
+=========================== */
+.sell-submit-btn {
+  flex: 1;
+  background: var(--success-color);
+  color: var(--text-light);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sell-submit-btn:hover {
+  background: #15803d;
+}
+
+.sell-cancel-btn {
+  flex: 1;
+  background: var(--danger-color);
+  color: var(--text-light);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sell-cancel-btn:hover {
+  background: #b91c1c;
+}
+
+/* ===========================
+   REDEEM BUTTON STYLES
+=========================== */
+.redeem-submit-btn {
+  flex: 1;
+  background: var(--primary-color);
+  color: var(--text-light);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.redeem-submit-btn:hover {
+  background: var(--secondary-color);
+}
+
+.redeem-cancel-btn {
+  flex: 1;
+  background: var(--danger-color);
+  color: var(--text-light);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.redeem-cancel-btn:hover {
+  background: #b91c1c;
+}

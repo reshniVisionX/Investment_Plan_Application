@@ -1,0 +1,43 @@
+.top-notification {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background:var(--secondary-color);
+  border-radius: 10px;
+  border:2px solid var(--primary-color);
+  color:var(--text-color);
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  transition: top 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.top-notification.show {
+  top: 40px;
+  opacity: 1;
+}
+
+.notif-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notif-message {
+  flex: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.notif-time {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-left: 10px;
+}

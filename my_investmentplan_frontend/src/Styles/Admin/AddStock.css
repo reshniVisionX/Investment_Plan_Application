@@ -1,0 +1,81 @@
+.createstock-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.createstock-title {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.createstock-form {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 420px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.createstock-form:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.createstock-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.createstock-field label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.createstock-field input,
+.createstock-field select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color 0.2s;
+}
+
+.createstock-field input:focus,
+.createstock-field select:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+.createstock-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.createstock-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.required {
+  color: red;
+}

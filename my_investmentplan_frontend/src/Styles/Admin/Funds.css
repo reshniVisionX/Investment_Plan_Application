@@ -1,0 +1,186 @@
+/**************************************
+   FILTER BOX
+**************************************/
+.admin-filter-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 12px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.admin-filter-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.admin-filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  background: var(--bg-color);
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/**************************************
+   STATUS BADGES
+**************************************/
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #c99500;
+}
+
+.status-badge.approved {
+  background: #d4edda;
+  color: #1e7e34;
+}
+
+.status-badge.rejected {
+  background: #f8d7da;
+  color: #a71d2a;
+}
+
+/**************************************
+   STATUS UPDATE CONTROLS
+**************************************/
+.admin-status-container {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-status-select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  cursor: pointer;
+  background: var(--bg-color);
+  color:var(--text-color);
+}
+
+.admin-status-btn {
+  padding: 8px 14px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.admin-status-btn:hover {
+  background: var(--primary-color);
+}
+
+/**************************************
+   FUND GRID
+**************************************/
+.admin-fund-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  padding: 20px 5px;
+}
+
+/**************************************
+   FUND CARD
+**************************************/
+.admin-fund-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+  transition: 0.25s ease;
+}
+
+.admin-fund-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/**************************************
+   FUND HEADER
+**************************************/
+.admin-fund-header {
+  margin-bottom: 10px;
+}
+
+.admin-fund-name {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.admin-fund-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/**************************************
+   FUND INFO
+**************************************/
+.admin-fund-info p {
+  margin: 6px 0;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/**************************************
+   STOCK SECTION
+**************************************/
+.admin-stock-allocation-box {
+  margin-top: 12px;
+  background: var(--bg-color);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+}
+
+.admin-stock-allocation-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.admin-stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-stock-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--card-border);
+}
+
+.admin-stock-item:last-child {
+  border-bottom: none;
+}
+
+.admin-no-stock {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

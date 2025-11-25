@@ -1,0 +1,123 @@
+/* ================================
+   CONTAINER
+================================ */
+.review-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  transition: 0.3s ease;
+  color:var(--text-color);
+}
+
+.review-container:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.review-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.review-desc {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+/* ================================
+   INPUT + UPLOAD
+================================ */
+.review-upload,
+.review-input,
+.review-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin-top: 5px;
+}
+
+/* ================================
+   GRID SECTIONS
+================================ */
+.review-bank-grid,
+.review-nominee-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.review-bank-grid > div,
+.review-nominee-grid > div {
+  flex: 1 1 calc(50% - 1.2rem);
+}
+
+/* Full width on small screens */
+@media (max-width: 768px) {
+  .review-bank-grid > div,
+  .review-nominee-grid > div {
+    flex: 1 1 100%;
+  }
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.review-action {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.review-btn-pay,
+.review-btn-back {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 48%;
+  transition: 0.25s ease;
+}
+
+.review-btn-pay {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.review-btn-pay:hover {
+  background: var(--secondary-color);
+}
+
+.review-btn-back {
+  background: #ccc;
+}
+
+.review-btn-back:hover {
+  background: #bbb;
+}
+
+/* ================================
+   RESPONSIVE BUTTON STACK
+================================ */
+@media (max-width: 600px) {
+  .review-action {
+    flex-direction: column;
+  }
+
+  .review-btn-pay,
+  .review-btn-back {
+    width: 100%;
+  }
+}

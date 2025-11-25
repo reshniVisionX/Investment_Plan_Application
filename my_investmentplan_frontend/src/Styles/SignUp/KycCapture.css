@@ -1,0 +1,311 @@
+/* ==================================================
+   KYC CAPTURE FORM (Signature Left, Photo Right)
+   Fixed horizontal alignment
+================================================== */
+
+.kyc-container {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  width: 90%;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.kyc-container:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.kyc-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* --------------------------------------------------
+   FLEX CONTAINER (Signature Left, Photo Right)
+-------------------------------------------------- */
+.kyc-flex {
+  display: flex;
+  flex-direction: row; /* Puts photo on right */
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: nowrap; /* ✅ Keep same row */
+}
+
+/* --------------------------------------------------
+   SECTIONS
+-------------------------------------------------- */
+.kyc-photo-section,
+.kyc-sign-section {
+  flex: 1;
+  height: 460px; /* ✅ Equal height */
+  background-color: var(--bg-color);
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Shrink when saved */
+.kyc-photo-section.saved,
+.kyc-sign-section.saved {
+  height: 380px;
+  transform: scale(0.98);
+  opacity: 0.95;
+}
+
+.kyc-photo-section:hover,
+.kyc-sign-section:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* --------------------------------------------------
+   SUBTITLES
+-------------------------------------------------- */
+.kyc-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------------------------------
+   CAMERA & PHOTO PREVIEW
+-------------------------------------------------- */
+.kyc-camera-preview,
+.kyc-photo-preview {
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.kyc-photo-preview img {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+}
+
+.kyc-photo-status {
+  text-align: center;
+  color: #1b7c3f;
+  font-weight: 500;
+  margin: 0.5rem 0 0.8rem;
+}
+
+/* --------------------------------------------------
+   SIGNATURE CANVAS
+-------------------------------------------------- */
+.kyc-canvas-container {
+  border: 1px dashed var(--secondary-color);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kyc-sign-canvas {
+  width: 100%;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  cursor: crosshair;
+}
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+.kyc-btn {
+  width: 100%;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.kyc-btn-capture {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.kyc-btn-capture:hover {
+  background-color: var(--primary-color);
+}
+
+.kyc-btn-retake {
+  background-color: #f4b400;
+  color: #fff;
+}
+.kyc-btn-retake:hover {
+  background-color: #d99a00;
+}
+
+.kyc-btn-save {
+  background-color: #21a67a;
+  color: #fff;
+}
+.kyc-btn-save:hover {
+  background-color: #1c8d67;
+}
+
+.kyc-btn-clear {
+  background-color: #777;
+  color: #fff;
+}
+.kyc-btn-clear:hover {
+  background-color: #555;
+}
+
+.kyc-btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+}
+.kyc-btn-danger:hover {
+  background-color: #c9302c;
+}
+
+/* --------------------------------------------------
+   SIGNATURE INFO BOX
+-------------------------------------------------- */
+.kyc-sign-info {
+  background-color: #d4f5e6;
+  border: 1px solid #9ed8b8;
+  color: #157347;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+/* --------------------------------------------------
+   STATUS GRID
+-------------------------------------------------- */
+.kyc-status-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.kyc-status-box {
+  flex: 1;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+}
+
+.kyc-status-box.active {
+  background-color: #d4f5e6;
+  border-color: #9ed8b8;
+  color: #1b7c3f;
+}
+
+.kyc-status-box.pending {
+  background-color: #f7f7f7;
+  color: #666;
+}
+
+/* --------------------------------------------------
+   NAVIGATION BUTTONS
+-------------------------------------------------- */
+.kyc-nav-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.kyc-nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.kyc-nav-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.kyc-nav-btn.verify {
+  background-color: #28a745;
+  color: #fff;
+}
+.kyc-nav-btn.verify:hover {
+  background-color: #218838;
+}
+
+.kyc-nav-btn.proceed {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.kyc-nav-btn.proceed:hover {
+  background-color: var(--primary-color);
+}
+
+.kyc-nav-btn.back {
+  background-color: #777;
+  color: #fff;
+}
+.kyc-nav-btn.back:hover {
+  background-color: #555;
+}
+
+.kyc-info-text {
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE DESIGN
+-------------------------------------------------- */
+@media (max-width: 850px) {
+  .kyc-flex {
+    flex-direction: column;
+  }
+
+  .kyc-photo-section,
+  .kyc-sign-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .kyc-status-grid {
+    flex-direction: column;
+  }
+}

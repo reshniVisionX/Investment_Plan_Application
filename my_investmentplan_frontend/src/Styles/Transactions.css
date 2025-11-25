@@ -1,0 +1,22 @@
+.transactions-container {
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.transactions-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.transactions-table th,
+.transactions-table td{
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.transactions-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}

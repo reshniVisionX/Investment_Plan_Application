@@ -1,0 +1,177 @@
+/* ================================
+   PERSONAL INFO FORM - FLEX VERSION
+================================ */
+.personal-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+  color: var(--text-color);
+}
+
+.personal-info-container:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.personal-info-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Split form horizontally */
+.personal-info-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.personal-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+
+/* Input styling */
+.personal-input {
+  width: 80%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.personal-input:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(166, 152, 247, 0.3);
+}
+
+/* OTP Section */
+.otp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  border: 1px dashed var(--secondary-color);
+  border-radius: 10px;
+  background-color: rgba(166, 152, 247, 0.08);
+  width:50%;
+}
+
+.otp-section:hover {
+  background-color: rgba(166, 152, 247, 0.15);
+}
+
+/* Buttons */
+.otp-btn,
+.validate-btn,
+.resend-btn {
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width:85%;
+}
+
+.otp-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+
+}
+
+.otp-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.validate-btn {
+  background-color: #21a67a;
+  color: #fff;
+}
+
+.validate-btn:hover {
+  background-color: #1d946d;
+}
+
+.resend-btn {
+  background: rgb(148, 148, 245);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.resend-btn:hover {
+  color: var(--secondary-color);
+}
+
+/* Proceed button */
+.proceed-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.proceed-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.proceed-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.proceed-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Login Section */
+.login-section {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.login-link {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.login-link:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .personal-info-flex {
+    flex-direction: column;
+  }
+}

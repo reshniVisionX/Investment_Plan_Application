@@ -1,0 +1,43 @@
+:root {
+  /* 🌞 Light Theme */
+  --primary-color: #17203d;
+  --secondary-color: #a393fe;
+  
+  --bg-color: #f5f6fa;
+  --text-color: #111;
+  --card-bg: #dbe3fe;
+  --card-border: #dcdcdc;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --background-color:#f5f6fa;
+}
+
+[data-theme="dark"] {
+  /* 🌙 Dark Theme */
+  --primary-color: #6552d0;
+  --secondary-color: #b4adfd;
+  --bg-color: #0f152c;
+  --text-color: #f8f9fc;
+  --card-bg: #1d2343;
+  --card-border: #2c335a;
+  --card-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  --card-shadow-hover: 0 4px 10px rgba(255, 255, 255, 0.1);
+  --background-color:#0f152c;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.input-wrapper {
+  margin-bottom: 18px;
+}
+
+.error-box {
+  height: 16px;           /* Reserve space for one-line error */
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+}
