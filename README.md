@@ -25,22 +25,19 @@ A full-stack real-time investment management platform that allows investors to m
 
 ### 💼 Portfolio Management
 - Fetch complete portfolio of stocks and mutual funds.
-- Live update of portfolio values as prices change.
-- Validation (missing stock selection, missing allocation, etc.).
+- Analysis Summary for the stocks and funds purchased.
 - Smooth UI with Toast notifications.
 
 ### 📝 KYC Capture (Photo + Digital Signature)
 - Capture live photo using **Webcam API**.
 - Digital signature using **HTML Canvas 2D API**.
 - Convert both photo & signature from base64 → File objects.
-- Verification required before moving to the next onboarding step.
 
 ### 🧩 Clean Frontend Architecture
 - React + TypeScript.
 - Redux Toolkit slices for stocks, funds, auth, notifications.
 - Async Thunks for API calls.
 - Modular components with reusable logic.
-- Complete TypeScript typings for all DTOs.
 
 ### 🔧 Robust Backend Architecture (ASP.NET Core)
 - SignalR Hub for managing connections & real-time updates.
@@ -48,6 +45,7 @@ A full-stack real-time investment management platform that allows investors to m
 - Group-based subscription for individual stocks & funds.
 - Broadcast service for pushing stock/fund updates efficiently.
 - Clean separation of Services, Controllers, DTOs, Hubs, and Repositories.
+- Global Error Handling, Email Notification
 
 ---
 
@@ -65,8 +63,7 @@ A full-stack real-time investment management platform that allows investors to m
 - ASP.NET Core Web API
 - SignalR
 - C#
-- Entity Framework (if used)
-- SQL Database
+- MSSQL Database
 
 ---
 
@@ -81,7 +78,4 @@ A full-stack real-time investment management platform that allows investors to m
 7. Live notifications appear with toast and `isLiveEvent`.
 8. Portfolio values auto-refresh based on real-time prices.
 
----
-
-## 🧱 Project Structure
 
