@@ -69,7 +69,7 @@ namespace InvestmentPlanAPI.Data
                     .HasConversion<string>(); // StockSector as string
 
                 entity.Property(i => i.CreatedAt)
-                      .HasDefaultValueSql("GETUTCDATE()");
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
             });
 
             // ===================== InvestorDetails =====================
@@ -111,7 +111,7 @@ namespace InvestmentPlanAPI.Data
 
 
                 entity.Property(s => s.CreatedAt)
-                      .HasDefaultValueSql("GETUTCDATE()");
+                      .HasDefaultValueSql("CURRENT_TIMESTAMP");
             });
 
             // ===================== Portfolio =====================
